@@ -1,0 +1,308 @@
+.buttonUp{
+	position: fixed;
+	bottom: 4%;
+	right: 3%;
+	text-decoration: none;
+	text-align: center;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	background-image: url('../images/buttonUp.png');
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	animation: up-out  0.3s;
+}
+
+.buttonUp:hover{
+	box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+	animation: up-hover  0.3s;
+	opacity: 0.9;
+}
+
+@keyframes up-hover {
+	from {box-shadow: 0 0 10px rgba(0,0,0,0.3); opacity: 1;}
+	to {box-shadow: 0 4px 10px rgba(0,0,0,0.3); opacity: 0.9;}
+}
+
+@keyframes up-out {
+	from {box-shadow: 0 4px 10px rgba(0,0,0,0.3); opacity: 0.9;}
+	to {box-shadow: 0 0 10px rgba(0,0,0,0.3); opacity: 1;}
+}
+
+#main{
+	background-image: url('../images/background.jpg');
+	position: relative;
+	height: 100vh;
+	min-height: 200px;
+	max-height: 700px;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-bottom: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+body{
+	margin: 0;
+	background: rgba(238,238,238,1);
+}
+
+.wikititle{
+	margin-top: 170px;
+	font-size: 210%;
+	color: rgba(250,250,250,1);
+	margin-left: 20%;
+	font-family: 'Tahoma';
+}
+
+#items{
+	margin-top: 10px;
+	margin-left: 10%;
+}
+
+#mainBottom{
+	background: rgba(0,0,0,.1);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+	background: linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 300px;
+}
+
+#navigator{
+	height: 5em;
+	background: rgba(0,0,0,.1);
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+	background: linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
+.nav-item{
+	margin-left: 3%;
+	display: inline;
+	color: white;
+	font-size: 100%;
+}
+
+.nav-a {
+	cursor: pointer;
+	color: #F7F7F7;
+ 	border-bottom: 1px solid #DCDCDC;
+ 	padding-bottom: 5px;
+ 	text-decoration: none;
+ 	font-weight: bold;
+}
+
+.nav-a:hover {
+	color: white;
+ 	border-bottom: 1px solid #DCDCDC;
+ 	padding-bottom: 5px;
+ 	text-decoration: none;
+}
+
+#tournaments{
+	margin-top: 100px;
+	font-size: 110%;
+	margin-left: 20%;
+	font-family: 'Tahoma';
+}
+
+.inline{
+	display: inline;
+}
+
+.span-total2{
+	display: inline;
+	margin-left: 1em;
+}
+
+.star{
+	margin-right: 0.2em;
+	width: 1em;
+	height: 1em;
+}
+
+#year{
+	margin-top: 30px;
+}
+
+.year-results{
+	margin-left: 0.5em;
+	display: inline;
+	color: #808080;
+	font-size: 90%;
+}
+
+.span-year2{
+	display: inline;
+	margin-left: 0.5em;
+}
+
+.tournamentMain{
+	display: table;
+	align-items: center;
+	vertical-align: middle;
+	width: 75%;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.starTournament{
+	vertical-align: top;
+	display: table-cell;
+	width: 40px;
+	padding-top: 10px;
+}
+
+.starTournamentImage{
+	width: 1em;
+}
+
+.tournament{
+	display: block;
+	align-items: center;
+	cursor: pointer;
+	font-size: 100%;
+	line-height:1.5em;
+	width: 100%;
+	height: 100%;
+}
+
+.tournament:hover{
+	background: rgba(230,230,230,1);
+}
+
+.tournamentName{
+	color: #0056C4;
+	border-bottom: 1px solid #CCEBFA;
+}
+
+.tournament-text{
+	display: table-cell;
+    vertical-align: middle;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.tournament-more{
+	display: none;
+}
+
+.more-content{
+	margin-left: 1.7em;
+}
+
+.more-info{
+	font-size: 80%;
+	margin-top: 10px;
+}
+
+.more-squad{
+	font-size: 80%;
+	margin-top: 10px;
+}
+
+.more-team-name{
+	font-weight: bold;
+}
+
+.more-players{
+	margin-left: 2em;
+	margin-top: 3px;
+}
+
+.more-image {
+	margin-top: 4px;	
+	margin-bottom: 20px;
+}
+
+.more-image img{
+	width: 45%;
+}
+
+.division{
+	font-size: 80%;
+}
+
+#players{
+	margin-top: 100px;
+	font-size: 110%;
+	margin-left: 20%;
+	font-family: 'Tahoma';
+}
+
+#players-table{
+	width: 70%;
+}
+
+tr.image td{
+	padding-top: 60px
+}
+
+#players-table tr td{
+	width: 25%;
+	text-align: center;
+}
+
+.player1{
+	width: 90%;
+}
+
+#myTeam{
+	margin-top: 100px;
+	font-size: 110%;
+	margin-left: 20%;
+	font-family: 'Tahoma';
+}
+
+.network{
+	text-decoration: none;
+	color: #0056C4;
+	border-bottom: 1px solid #CCEBFA;
+}
+
+.network-div{
+	margin-top: 20px;
+}
+
+.contacts{
+	margin-top: 60px;
+}
+
+#photos{
+	margin-top: 100px;
+	font-size: 110%;
+	font-family: 'Tahoma';
+}
+
+#photos-gallery{
+	margin-left: 20%;
+}
+
+.gallery-image{
+	width: 100%;
+}
+
+.grid-item { 
+	width: 270px;
+	margin-bottom: 10px;
+}
+
+.grid-item-2 { 
+	width: 550px;
+	margin-bottom: 10px;
+}
+
+.history{
+	width: 80%;
+}
+
+.center{
+	margin-left: 15%;
+	width: 70%;
+}
